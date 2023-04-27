@@ -4,7 +4,7 @@ import moment from "moment";
 
 function getDustInfo(selCity) {
   return axios.get(
-    "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
+    "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
     {
       params: {
         serviceKey:
@@ -65,7 +65,7 @@ function getWeatherInfo(pointX, pointY) {
   console.log(setTime);
 
     return axios.get(
-      "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst",
+      "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst",
       {
         params: {
           serviceKey:

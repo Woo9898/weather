@@ -73,7 +73,7 @@ function getWeatherInfo(pointX, pointY) {
           dataType: "Json",
           base_date: today, //추후 수정
           base_time: setTime,
-          numOfRows: "592",
+          numOfRows: "296",
           pageNo: "1",
           nx: pointX,
           ny: pointY,

@@ -1,6 +1,6 @@
 <template>
   <select v-model="selected">
-    <option disabled value="">도시 선택</option>
+    <option disabled value="">지역 선택</option>
     <option value="서울">서울</option>
     <option value="부산">부산</option>
     <option value="대구">대구</option>

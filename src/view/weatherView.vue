@@ -15,7 +15,8 @@
         </div>
       </li>
     </ul> -->
-    <weather-chart></weather-chart>
+    <weather-tmpchart></weather-tmpchart>
+    <weather-popchart></weather-popchart>
   </div>
 </template>
 
@@ -23,18 +24,22 @@
 import PageHeader from '../components/pageHeadForWeather.vue'
 import SelectCity from '../components/selectCity.vue'
 import { mapGetters } from 'vuex';
-import WeatherChart from '../components/weatherChart.vue'
-export default {
+import WeatherTmpchart from '../components/weatherTmpChart.vue'
+import WeatherPopchart from '../components/weatherPopChart.vue'
+export default{
     
     components:{
         PageHeader,
         SelectCity,
-        WeatherChart
+        WeatherTmpchart,
+        WeatherPopchart
     },
     computed:{
       ...mapGetters([
         'getWeather', 
-        'getTmp'
+        'getTmp',
+        'getPty',
+        'getPop'
     ])
     }
 }

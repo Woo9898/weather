@@ -40,7 +40,11 @@ export default {
       var res = await getWeatherInfo(cityPoint.x, cityPoint.y)
       context.commit("setWeatherInfo", res.data.response.body.items.item)
       //기온정보 설정
-      context.commit("setWeatherTmp");
+      context.commit("setWeatherSubData");
+      // //강수형태 설정
+      // context.commit("setWeatherPty");
+      // //강수확률 설정
+      // context.commit("setWeatherPop");
       return res;
     }catch(error){
       console.log(error);
